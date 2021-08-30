@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Requisitos específicos:
+Jquery : utilizar um scroll que a partir de  400px do topo do body apareça uma seta ao lado direito da 
+pagina que funciona como retorno suave para o inicio da pagina , aplicar essa função na pagina inicial do projeto.
+JavaScript: validações.
+Css: Estilizar o rodapé usando exclusivamente css.
+HTML: Utilizar <aside> e <article> -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="John Correa Gerber">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!--Bootstrap CSS(instalado localmente)-->
+  <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- folha de estilos padrão  -->
+  <link rel="stylesheet" href="style/estilos.css">
+  <title>Cidades Atendidas</title>
+  <style type="text/css">
+    body {
+      background-image: url("./img/background-town.png");
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <a class="navbar-brand" id="fastFitLogo" href="index.html"><img src="img/FastFit-logo2.png" class="img-fluid img"
+        alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="quem-somos.html"><i class="bi-people"></i> Quem Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="cidades-atendidas.html"><i class="bi-building"></i> Cidades
+            Atendidas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="seja-parceiro.html"><i class="bi-person-plus"></i> Seja um
+            Parceiro</a>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="bi-link "></i> Informações Úteis
+          </a>
+          <div class="dropdown-menu bg-transparent" id="dropDwnMenu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="calc-imc.html">Conheça seu IMC</a>
+            <a class="dropdown-item" href="dicas-dieta.html">Dicas de Dieta</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- FIM do navbar -->
+
+  <!-- conteudo MAIN  -->
+  <main class="container" id="mainContent">
+    <section class="card text-center bg-transparent">
+      <h3 class="card-header">Cidades onde atuamos:</h3>
+       <!-- tab headings -->
+    <ul class="nav nav-tabs container-md" role="tablist">
+      <li class="nav-item">
+          <a id="a-tab" class="nav-link active" data-toggle="tab" role="tab" href="#a">São Paulo</a>
+      </li>
+      <li class="nav-item">
+          <a id="b-tab" class="nav-link" data-toggle="tab" role="tab" href="#b">Rio de Janeiro</a>
+      </li>
+      <li class="nav-item">
+          <a id="c-tab" class="nav-link" data-toggle="tab" role="tab" href="#c">Minas Gerais</a>
+      </li>
+      <li class="nav-item">
+          <a id="d-tab" class="nav-link" data-toggle="tab" role="tab" href="#d">Distrito Federal</a>
+      </li>
+      <li class="nav-item">
+        <a id="e-tab" class="nav-link" data-toggle="tab" role="tab" href="#e">Bahia</a>
+    </li>
+    <li class="nav-item">
+      <a id="f-tab" class="nav-link" data-toggle="tab" role="tab" href="#f">Ceará</a>
+  </li>
+  </ul>
+  <!-- tab contents -->
+  <div class="tab-content" style="padding: 20px;">
+      <div id="a" aria-labelledby="a-tab" class="tab-pane fade show active container-md" role="tabpanel"
+          aria-controls="a" aria-selected="true">
+          <ul class="list-unstyled">
+            <li>São Paulo</li>
+            <li>Campinas</li>
+            <li>Ribeirão Preto</li>
+            <li>Santos</li>
+          </ul>
+      </div>
+      <div id="b" aria-labelledby="b-tab" class="tab-pane fade container-md" role="tabpanel" aria-controls="b"
+          aria-selected="false">
+          <ul class="list-unstyled">
+            <li>Rio de Janeiro</li>
+            <li>São Gonçalo</li>
+            <li>Duque de Caxias</li>
+          </ul>
+      </div>
+      <div id="c" aria-labelledby="c-tab" class="tab-pane fade container-md" role="tabpanel" aria-controls="c"
+          aria-selected="false">
+          <ul class="list-unstyled">
+            <li>Belo Horizonte</li>
+            <li>Uberlândia</li>
+          </ul>
+      </div>
+      <div id="d" aria-labelledby="d-tab" class="tab-pane fade container-md" role="tabpanel" aria-controls="d"
+          aria-selected="false">
+          <ul class="list-unstyled">
+            <li>Brasília</li>
+          </ul>
+      </div>
+      <div id="e" aria-labelledby="e-tab" class="tab-pane fade container-md" role="tabpanel" aria-controls="e"
+          aria-selected="false">
+          <ul class="list-unstyled">
+            <li>Salvador</li>
+            <li>Vitória da Conquista</li>
+          </ul>
+      </div>
+      <div id="f" aria-labelledby="f-tab" class="tab-pane fade container-md" role="tabpanel" aria-controls="f"
+          aria-selected="false">
+          <ul class="list-unstyled">
+            <li>Fortaleza</li>
+            <li>Juazeiro do Norte</li>
+          </ul>
+      </div>
+  </div>
+  <div class="card-footer text-muted">Em breve mais cidades!</div>
+    </section>
+
+  </main>
+  <!-- FIM conteudo MAIN  -->
+
+  <!-- Botao Top -->
+  <a href="#fastFitLogo" id="topBtn" title="Voltar ao Topo"><i class="h1 bi bi-arrow-up-square-fill"></i></a>
+  <!-- FIM Botao Top -->
+
+  <!--Footer-->
+  <footer id="mainFooter">
+    <div id="creditos">
+      <span>&copy 2021 FastFit.</span>
+    </div>
+    <div id="redes-sociais">
+      <img src="img/redes-sociais.png" class ="imgRedes" alt="Redes Sociais">
+    </div>
+  </footer>
+  <!--FIM Footer-->
+
+  <!-- SCRIPTS: Jquery first, then Popper, then Bootstrap -->
+  <!--Jquery (instalado localmente)-->
+  <script type="text/javascript" src="jquery/jquery-3.6.0.js"></script>
+  <!--Popper (link externo)-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+  <!--Bootstrap JS(instalado localmente)-->
+  <script type="text/javascript" src="bootstrap-4.6.0-dist/js/bootstrap.js"></script>
+  <!-- script padrão -->
+  <script type="text/javascript" src="script/scripts.js"></script>
+</body>
+
+</html>

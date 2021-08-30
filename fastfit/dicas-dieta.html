@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Requisitos específicos:
+Jquery : utilizar um scroll que a partir de  400px do topo do body apareça uma seta ao lado direito da 
+pagina que funciona como retorno suave para o inicio da pagina , aplicar essa função na pagina inicial do projeto.
+JavaScript: validações.
+Css: Estilizar o rodapé usando exclusivamente css.
+HTML: Utilizar <aside> e <article> -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="John Correa Gerber">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!--Bootstrap CSS(instalado localmente)-->
+  <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- folha de estilos padrão  -->
+  <link rel="stylesheet" href="style/estilos.css">
+  <title>Dicas de Dieta</title>
+  <style type="text/css">
+    body {
+      background-image: url("./img/background-food.png");
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <a class="navbar-brand" id="fastFitLogo" href="index.html"><img src="img/FastFit-logo2.png" class="img-fluid img"
+        alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="quem-somos.html"><i class="bi-people"></i> Quem Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="cidades-atendidas.html"><i class="bi-building"></i> Cidades
+            Atendidas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="seja-parceiro.html"><i class="bi-person-plus"></i> Seja um
+            Parceiro</a>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="bi-link "></i> Informações Úteis
+          </a>
+          <div class="dropdown-menu bg-transparent" id="dropDwnMenu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="calc-imc.html">Conheça seu IMC</a>
+            <a class="dropdown-item" href="dicas-dieta.html">Dicas de Dieta</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- FIM do navbar -->
+
+  <!-- conteudo MAIN  -->
+  <main class="container-fluid" id="mainContent">
+    <section class="card bg-transparent mt-4">
+      <article class="card-header text-center">
+        <h3 class="card-title">Qual a sua dieta ideal?</h3>
+        <p class="card-subtitle">Seja para perder ou ganhar peso, ganhar músculos ou massa óssea, sempre existe uma dieta ideal para você.</p>
+      </article>
+      <div class="accordion " id="accordionExample">
+        <div class="card z-depth-0 bordered">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne"><i class="bi bi-wind"></i><span class="mx-1"> </span>
+                 Para quem quer emagrecer:
+              </button>
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body row p-3">
+              <div class="col-lg-9">Uma dieta deve visar não só a perda de peso, mas também a reeducação alimentar, esta deve assim permitir que o peso seja perdido de forma saudável e que existe o ganho de novos hábitos alimentares e de estilo de vida, que promovam a manutenção do peso a longo prazo.
+
+                Existem várias dietas que cortam um grupo ou grupos de alimentos ou que, por outro lado, têm uma restrição muito grande. Estas tornam-se, assim, dietas muitos restritas e acarretam riscos associados, como o desenvolvimento de carências nutricionais.
+                
+                Para que exista uma perda de peso é fundamental que exista um défice calórico, ou seja, o valor calórico ingerido diariamente deve ser inferior ao gasto diário, permitindo desta forma um défice calórico e o gasto das “reservas energéticas”.
+                
+                Dentro do valor calórico disponível para consumo durante o dia, pode-se distribuir o mesmo entre os diferentes grupos de macronutrientes, como as proteínas, hidratos de carbono e lípidos (gorduras), permitindo desta forma que exista um consumo de alimentos dos vários grupos alimentares e evitando a ocorrência de carências nutricionais.
+                
+                As necessidades nutricionais variam de pessoa para pessoa e dependem de vários parâmetros tais como: idade, género, atividade física, fase do ciclo de vida (como por exemplo gravidez, menopausa ou amamentação), história clínica (presença de alguma doença, análises clínicas, etc.), assim como dos objetivos individuais. Também a distribuição dos macronutrientes (proteína, lípidos ou gordura e hidratos de carbono) varia dependendo destes mesmos fatores, podendo haver necessidade ou não de reduzir ou aumentar o consumo de um destes macronutrientes, como por exemplo, aumentar o consumo de proteína e reduzir o consumo de hidratos de carbono.</div>
+              <div class="col-lg-3 mt-3 text-center"><img class="img-fluid img-dietas" src="img/dieta-img-1.jpg" alt=""></div>
+            </div>
+          </div> 
+        </div>
+        <div class="card z-depth-0 bordered">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo"><i class="bi bi-speedometer2"></i><span class="mx-1"> </span>
+                 Para quem precisa ganhar peso:
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body row">
+              <div class="col-lg-9">Qual a alimentação ideal para engordar?
+                Evite os alimentos ricos em açúcar refinado, carboidratos simples, que em excesso podem favorecer a resistência à insulina que por sua vez pode se tornar diabetes tipo 2.
+                
+                As gorduras trans, presentes em alguns alimentos industrializados e frituras, e a gordura saturada, encontrada principalmente em alimentos de origem animal como a carne vermelha, também devem ser evitadas, pois favorecem o aumento do colesterol, entre outras complicações.
+                
+                Alguns alimentos termogênicos também podem ter o consumo restringido, como a cafeína, presente no café e no chá verde, a pimenta e o chá de hibisco. Estes alimentos aceleram o gasto calórico e favorecem o emagrecimento.</div>
+              <div class="col-lg-3 mt-3 text-center"><img class="img-dietas" src="img/dieta-img-2.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
+        <div class="card z-depth-0 bordered">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                aria-expanded="false" aria-controls="collapseThree"><i class="bi bi-egg-fried"></i><span class="mx-1"> </span>
+                 Para quem precisa ganhar músculos:
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body row">
+              <div class="col-lg-9">Existem diversos alimentos que contribuem com as dietas em geral, principalmente com a dieta para ganhar massa muscular. Entre os principais se destacam o arroz, batata-doce, inhame, feijão, manga, banana, abacate, feijão, mamão, melancia, cereja e abacaxi, por exemplo.
+
+                Além disso, é importante destacar que, além de manter uma alimentação equilibrada, aqueles que buscam o desenvolvimento da massa muscular devem também manter uma rotina equilibrada de atividades físicas. Dessa maneira, os alimentos e os exercícios se complementam, apresentando melhores resultados.
+                Além da dieta focada no ganho de massa magra no corpo, também existem outros tipos de dietas, sendo que cada uma delas é ideal para objetivos e metabolismos diferentes. Entre as principais se destacam especialmente o cutting – processo que corta as calorias da dieta – e o bulking – dieta baseada no alto consumo de carboidratos.</div>
+              <div class="col-lg-3 mt-3 text-center"><img class="img-dietas" src="img/dieta-img-3.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <article class="card-footer"><br></article>
+    </section>
+
+  </main>
+  <!-- FIM conteudo MAIN  -->
+
+  <!-- Botao Top -->
+  <a href="#fastFitLogo" id="topBtn" title="Voltar ao Topo"><i class="h1 bi bi-arrow-up-square-fill"></i></a>
+  <!-- FIM Botao Top -->
+
+  <!--Footer: usar somente CSS-->
+  <footer id="mainFooter">
+    <div id="creditos">
+      <span>&copy 2021 FastFit.</span>
+    </div>
+    <div id="redes-sociais">
+      <img src="img/redes-sociais.png" class ="imgRedes" alt="Redes Sociais">
+    </div>
+  </footer>
+  <!--FIM Footer-->
+
+  <!-- SCRIPTS: Jquery first, then Popper, then Bootstrap -->
+  <!--Jquery (instalado localmente)-->
+  <script type="text/javascript" src="jquery/jquery-3.6.0.js"></script>
+  <!--Popper (link externo)-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+  <!--Bootstrap JS(instalado localmente)-->
+  <script type="text/javascript" src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+  <!-- script padrão -->
+  <script type="text/javascript" src="script/scripts.js"></script>
+</body>
+
+</html>

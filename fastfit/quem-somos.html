@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Requisitos específicos:
+Jquery : utilizar um scroll que a partir de  400px do topo do body apareça uma seta ao lado direito da 
+pagina que funciona como retorno suave para o inicio da pagina , aplicar essa função na pagina inicial do projeto.
+JavaScript: validações.
+Css: Estilizar o rodapé usando exclusivamente css.
+HTML: Utilizar <aside> e <article> -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="John Correa Gerber">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!--Bootstrap CSS(instalado localmente)-->
+  <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- folha de estilos padrão  -->
+  <link rel="stylesheet" href="style/estilos.css">
+  <title>Quem Somos</title>
+  <style type="text/css">
+    body {
+      background-image: url("./img/background-group.png");
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <a class="navbar-brand" id="fastFitLogo" href="index.html"><img src="img/FastFit-logo2.png" class="img-fluid img"
+        alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="quem-somos.html"><i class="bi-people"></i> Quem Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="cidades-atendidas.html"><i class="bi-building"></i> Cidades
+            Atendidas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="seja-parceiro.html"><i class="bi-person-plus"></i> Seja um
+            Parceiro</a>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="bi-link "></i> Informações Úteis
+          </a>
+          <div class="dropdown-menu bg-transparent" id="dropDwnMenu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="calc-imc.html">Conheça seu IMC</a>
+            <a class="dropdown-item" href="dicas-dieta.html">Dicas de Dieta</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- FIM do navbar -->
+
+  <!-- conteudo MAIN  -->
+  <main class="container" id="mainContent">
+    <div class="jumbotron">
+      <h2 class="display-4">Quem somos:</h2>
+      <p class="lead">O FastFit foi desenvolvido por um time mais apaixonado pela saúde do que por <em>junk food.</em>
+        Não é que não gostemos de uma batatinha frita ou uma pizza de vez em quando, mas o nosso sonho mesmo
+        é tornar o acesso a exercícios físicos e alimentação saudável tão ou mais fácil do que o acesso a alimentos
+        prejudiciais ao nosso corpo.
+      </p>
+      <hr class="my-4">
+      <div class="row">
+        <div class="col-sm-3">
+          <figure><img src="img/pessoa1.jfif" class="img-thumbnail img-fluid" alt="">
+            <figcaption class="text-justify">Clarisneide Mendes</figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-9 text-left" id="texto1">
+          As experiências acumuladas demonstram que o entendimento das metas propostas ainda não demonstrou
+          convincentemente que vai participar na mudança das condições inegavelmente apropriadas. Acima de tudo, é
+          fundamental ressaltar que a consulta aos diversos militantes afeta positivamente a correta previsão dos
+          modos de operação convencionais. No entanto, não podemos esquecer que a contínua expansão de nossa atividade
+          acarreta um processo de reformulação e modernização das condições financeiras e administrativas exigidas.
+        </div>
+      </div>
+      <hr class="my-sm-2">
+      <div class="row">
+        <div class="col-sm-3">
+          <figure><img src="img/pessoa2.jfif" class="img-thumbnail img-fluid" alt="">
+            <figcaption class="text-justify">Indianilsom Borba</figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-9 text-left" id="texto2">
+          Evidentemente, o comprometimento entre as equipes cumpre um papel essencial na formulação das direções preferenciais no sentido do progresso. Por conseguinte, o julgamento imparcial das eventualidades faz parte de um processo de gerenciamento da gestão inovadora da qual fazemos parte. É importante questionar o quanto o início da atividade geral de formação de atitudes talvez venha a ressaltar a relatividade das regras de conduta normativas.
+        </div>
+      </div>
+      <hr class="my-sm-2">
+      <div class="row">
+        <div class="col-sm-3">
+          <figure><img src="img/pessoa3.jfif" class="img-thumbnail img-fluid" alt="">
+            <figcaption class="text-justify">Valdenilda Ramos</figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-9 text-left" id="texto3">
+          O que temos que ter sempre em mente é que a revolução dos costumes causa impacto indireto na reavaliação
+          das
+          diversas correntes de pensamento. O empenho em analisar a necessidade de renovação processual deve passar
+          por
+          modificações independentemente dos relacionamentos verticais entre as hierarquias. Pensando mais a longo
+          prazo,
+          o fenômeno da Internet não pode mais se dissociar de todos os recursos funcionais envolvidos. Gostaria de
+          enfatizar que a hegemonia do ambiente político estende o alcance e a importância dos métodos utilizados na
+          avaliação de resultados.
+        </div>
+      </div>
+      <hr class="my-sm-2">
+      <div class="row">
+        <div class="col-sm-3">
+          <figure><img src="img/pessoa4.jfif" class="img-thumbnail img-fluid" alt="">
+            <figcaption class="text-justify">Jeiquérisson da Silva</figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-9 text-left" id="texto4">
+          É claro que a execução dos pontos do programa nos obriga à análise da gestão inovadora da qual fazemos parte. Todavia, a complexidade dos estudos efetuados garante a contribuição de um grupo importante na determinação do investimento em reciclagem técnica. Assim mesmo, o surgimento do comércio virtual oferece uma interessante oportunidade para verificação do retorno esperado a longo prazo.
+        </div>
+        
+      </div>
+
+
+    </div>
+  </main>
+  <!-- FIM conteudo MAIN  -->
+
+  <!-- Botao Top -->
+  <a href="#fastFitLogo" id="topBtn" title="Voltar ao Topo"><i class="h1 bi bi-arrow-up-square-fill"></i></a>
+  <!-- FIM Botao Top -->
+
+  <!--Footer-->
+  <footer id="mainFooter">
+    <div id="creditos">
+      <span>&copy 2021 FastFit.</span>
+    </div>
+    <div id="redes-sociais">
+      <img src="img/redes-sociais.png" class ="imgRedes" alt="Redes Sociais">
+    </div>
+  </footer>
+  <!--FIM Footer-->
+
+  <!-- SCRIPTS: Jquery first, then Popper, then Bootstrap -->
+  <!--Jquery (instalado localmente)-->
+  <script type="text/javascript" src="jquery/jquery-3.6.0.js"></script>
+  <!--Popper (link externo)-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+  <!--Bootstrap JS(instalado localmente)-->
+  <script type="text/javascript" src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+  <!-- script padrão -->
+  <script type="text/javascript" src="script/scripts.js"></script>
+</body>
+
+</html>

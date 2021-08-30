@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Requisitos específicos:
+Jquery : utilizar um scroll que a partir de  400px do topo do body apareça uma seta ao lado direito da 
+pagina que funciona como retorno suave para o inicio da pagina , aplicar essa função na pagina inicial do projeto.
+JavaScript: validações.
+Css: Estilizar o rodapé usando exclusivamente css.
+HTML: Utilizar <aside> e <article> -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="John Correa Gerber">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!--Bootstrap CSS(instalado localmente)-->
+  <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- folha de estilos padrão  -->
+  <link rel="stylesheet" href="style/estilos.css">
+  <title>Calcule seu IMC</title>
+  <style type="text/css">
+    body {
+      background-image: url("./img/background-imc.png");
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <a class="navbar-brand" id="fastFitLogo" href="index.html"><img src="img/FastFit-logo2.png" class="img-fluid img"
+        alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="quem-somos.html"><i class="bi-people"></i> Quem Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="cidades-atendidas.html"><i class="bi-building"></i> Cidades
+            Atendidas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="seja-parceiro.html"><i class="bi-person-plus"></i> Seja um
+            Parceiro</a>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="bi-link "></i> Informações Úteis
+          </a>
+          <div class="dropdown-menu bg-transparent" id="dropDwnMenu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="calc-imc.html">Conheça seu IMC</a>
+            <a class="dropdown-item" href="dicas-dieta.html">Dicas de Dieta</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- FIM do navbar -->
+
+  <!-- conteudo MAIN  -->
+  <main class="container" id="mainContent">
+    <div class="jumbotron bg-transparent">
+      <h1 class="display-4 text-left">Calcule seu IMC</h1>
+      <p class="lead">E descubra se está acima ou abaixo do peso.</p>
+      <hr class="my-4">
+      <p>IMC é a sigla para Índice de Massa Corporal,que é um cálculo que serve para avaliar se a pessoa está dentro do
+        seu peso ideal em relação à altura. Assim, de acordo com o valor do resultado de IMC, a pessoa pode saber se
+        está dentro do peso ideal, acima ou abaixo do peso desejado.
+        Estar dentro do peso certo é importante porque estar acima ou abaixo desse peso pode influenciar bastante a
+        saúde, aumentando o risco de doenças como desnutrição quando se está abaixo do peso, e AVC ou infarto, quando se
+        está acima do peso. Assim, é comum os médicos, enfermeiros e nutricionistas avaliem o IMC da pessoa nas
+        consultas de rotina para verificar a possibilidade de doenças às quais a pessoa pode estar pré-disposta.</p>
+        <hr class="my-4">
+      <form class="form-inline mb-2">
+        <div class="form-group mx-1 my-1">
+          <label for="formPeso" class="mr-1">Peso: </label>
+          <input type="number" class="form-control" id="formPeso" placeholder="Ex: 60" required>
+        </div>
+        <div class="form-group mx-1 my-1">
+          <label for="formAltura" class="mr-1">Altura: </label>
+          <input type="number" class="form-control" id="formAltura" placeholder="Ex: 1.70" required>
+        </div>
+        <div class="btn-group-lg mx-3 my-sm-3">
+          <button class="btn btn-success mx-2" id="enviarIMC" type="button">Enviar</button><button class="btn btn-warning mx-2"
+            type="reset">Limpar</button>
+        </div>
+      </form>
+      <div id="formResultado"></div>
+    </div>
+  </main>
+  <!-- FIM conteudo MAIN  -->
+
+  <!-- Botao Top -->
+  <a href="#fastFitLogo" id="topBtn" title="Voltar ao Topo"><i class="h1 bi bi-arrow-up-square-fill"></i></a>
+  <!-- FIM Botao Top -->
+
+  <!--Footer-->
+  <footer id="mainFooter">
+    <div id="creditos">
+      <span>&copy 2021 FastFit.</span>
+    </div>
+    <div id="redes-sociais">
+      <img src="img/redes-sociais.png" class ="imgRedes" alt="Redes Sociais">
+    </div>
+  </footer>
+  <!--FIM Footer-->
+
+  <!-- SCRIPTS: Jquery first, then Popper, then Bootstrap -->
+  <!--Jquery (instalado localmente)-->
+  <script type="text/javascript" src="jquery/jquery-3.6.0.js"></script>
+  <!--Popper (link externo)-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+  <!--Bootstrap JS(instalado localmente)-->
+  <script type="text/javascript" src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+  <!-- script padrão -->
+  <script type="text/javascript" src="script/scripts.js"></script>
+</body>
+
+</html>

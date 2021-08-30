@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Requisitos específicos:
+Jquery : utilizar um scroll que a partir de  400px do topo do body apareça uma seta ao lado direito da 
+pagina que funciona como retorno suave para o inicio da pagina , aplicar essa função na pagina inicial do projeto.
+JavaScript: validações.
+Css: Estilizar o rodapé usando exclusivamente css.
+HTML: Utilizar <aside> e <article> -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="John Correa Gerber">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!--Bootstrap CSS(instalado localmente)-->
+  <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- folha de estilos padrão  -->
+  <link rel="stylesheet" href="style/estilos.css">
+  <title>Seja Parceiro</title>
+  <style type="text/css">
+    body {
+      background-image: url("./img/background-partner.png");
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <a class="navbar-brand" id="fastFitLogo" href="index.html"><img src="img/FastFit-logo2.png" class="img-fluid img"
+        alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="quem-somos.html"><i class="bi-people"></i> Quem Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="cidades-atendidas.html"><i class="bi-building"></i> Cidades
+            Atendidas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="seja-parceiro.html"><i class="bi-person-plus"></i> Seja um
+            Parceiro</a>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="bi-link "></i> Informações Úteis
+          </a>
+          <div class="dropdown-menu bg-transparent" id="dropDwnMenu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="calc-imc.html">Conheça seu IMC</a>
+            <a class="dropdown-item" href="dicas-dieta.html">Dicas de Dieta</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- FIM do navbar -->
+
+  <!-- conteudo MAIN  -->
+  <main class="container" id="mainContent">
+    <section class="card text-center bg-transparent">
+      <div class="card-header">
+        <h4 class="card-title">Seja um parceiro FastFit</h4>
+        <hr>
+        <p class="card-subtitle">Se você é um profissional de Educação Física e deseja conhecer mais sobre o cadastro de
+          novos Parceiros, digite seus dados abaixo, e logo entraremos em contato.</p>
+      </div>
+      <div class="card-body">
+        <form class="form" name="formulario">
+          <div class="form-group text-left">
+            <label for="inputNome">Nome: </label>
+            <input type="text" class="form-control" id="inputNome" name="nome" placeholder="Digite seu nome aqui" required>
+            <small id="nameHelp" class="form-text text-danger"></small>
+          </div>
+          <div class="form-group text-left">
+            <label for="inputEmail">Email:</label>
+            <input type="email" class="form-control" id="inputEmail" name="email" aria-describedby="emailHelp"
+              placeholder="Digite seu e-mail aqui" required>
+              <small id="emailHelp" class="form-text text-danger"></small>
+          </div>
+          <div class="form-row d-lg-flex flex-lg-row justify-content-around">
+            <div class="form-group estadoCidade text-left">
+              <label for="inputEstado">Estado: </label>
+              <select class="form-control" id="inputEstado" name="estado" required>
+                <option value="">Escolha...</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select>
+              <small id="estadoHelp" class="form-text text-danger"></small>
+            </div>
+            <div class="form-group estadoCidade text-left">
+              <label for="inputCidade">Cidade: </label>
+              <input type="text" class="form-control" id="inputCidade" name="cidade" placeholder="Cidade" required>
+              <small id="cidadeHelp" class="form-text text-danger"></small>
+            </div>
+          </div>
+          <div class="form-group text-left">
+            <label for="comoSoube">Como ficou sabendo da FastFit?</label>
+            <select class="form-control" id="comoSoube" name="comoSoube" required>
+              <option value="">Escolha...</option>
+              <option value="redeSoc">Redes Sociais</option>
+              <option value="amigos">Amigos</option>
+              <option value="jornRev">Jornais/revistas</option>
+              <option value="google">Google</option>
+              <option value="Outro">Outro</option>
+            </select>
+            <small id="comoSoubeHelp" class="form-text text-danger"></small>
+          </div>
+          <div class="form-group text-left">
+            <label for="mensagem">Se desejar, forneça dados adicionais:</label>
+            <textarea class="form-control" id="mensagem" name="mensagem" rows="3">
+            </textarea>
+          </div>
+          <div class="btn-group-lg mt-3">
+            <button type="button" id="#cadastrar" class="btn btn-secondary mr-2" onclick="validar()">Enviar</button>
+            <button type="reset" class="btn btn-warning">Limpar</button>
+          </div>
+
+        </form>
+      </div>
+      <div class="card-footer text-muted"></div>
+    </section>
+  </main>
+  <!-- FIM conteudo MAIN  -->
+
+  <!-- Botao Top -->
+  <a href="#fastFitLogo" id="topBtn" title="Voltar ao Topo"><i class="h1 bi bi-arrow-up-square-fill"></i></a>
+  <!-- FIM Botao Top -->
+
+  <!--Footer-->
+  <footer id="mainFooter">
+    <div id="creditos">
+      <span>&copy 2021 FastFit.</span>
+    </div>
+    <div id="redes-sociais">
+      <img class ="imgRedes" src="img/redes-sociais.png" alt="Redes Sociais">
+    </div>
+  </footer>
+  <!--FIM Footer-->
+
+  <!-- SCRIPTS: Jquery first, then Popper, then Bootstrap -->
+  <!--Jquery (instalado localmente)-->
+  <script type="text/javascript" src="jquery/jquery-3.6.0.js"></script>
+  <!--Popper (link externo)-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+  <!--Bootstrap JS(instalado localmente)-->
+  <script type="text/javascript" src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+  <!-- script padrão -->
+  <script type="text/javascript" src="script/scripts.js"></script>
+</body>
+
+</html>
