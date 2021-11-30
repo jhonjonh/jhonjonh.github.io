@@ -1,2 +1,2 @@
 # jhonjonh.github.io
-Página para testar um deploy estático.
+Deploys de projetos de páginas estáticas.
