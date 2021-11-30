@@ -1,0 +1,533 @@
+/* RESET MARGIN */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width:100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* NAVBAR */
+.navbar .nav-link {
+  color: black;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover a,
+.navbar .nav-link:focus a {
+  color: #cc2222;
+  text-decoration: none;
+}
+
+.section1 .bloco1 {
+  background-color: #cc2222;
+ 
+}
+
+.section1 .bloco1 .text-center {
+  color: #dddddd;
+  padding: 35px;
+ 
+}
+
+/* botão Saiba mais */
+.section1 .botao {
+  display: flex;
+  flex-direction: row;
+}
+
+/* carrosel */
+.section1 .bloco2 {
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  background-color: white; 
+}
+
+.section1 .bloco3 {
+  background-color: white;
+  width: 80%;
+}
+
+/* segunda parte do body*/
+.section1 .bloco4 {
+  background-color: #dddddd;
+  width: 100%;
+  
+}
+
+.section1 .bloco4 .row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ 
+  /* overflow-x: auto;
+  white-space: nowrap; */
+  
+}
+
+.section1 .bloco5 {
+  background-color: #cc2222;
+  color: antiquewhite; 
+  width: 100%;
+  
+}
+
+.section1 .bloco5 .input1{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.section1 .bloco5 .input2{
+  
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.section1 .bloco6 {
+  background-color: #dddddd;
+  width: 100%;
+}
+
+.section1 .bloco6 .row{
+  display: flex;
+  justify-content:center;
+  width: 100%;
+}
+
+.section1 .bloco6 .botao3{
+  
+  display: flex;
+  justify-content:center;
+  width: 100%;
+}
+
+.section1 .bloco6 .row .img{
+  display: flex;
+  justify-content:center;
+  background-color: antiquewhite;
+  width: 100%;
+}
+
+.section1 .bloco7 {
+  background-color: #cc2222;
+  color: antiquewhite;
+  width: 100%;
+}
+
+.section1 .bloco7 .row{
+  display: flex;
+  justify-content:center;
+  width: 100%;
+}
+
+.section1 .bloco7 .botao3{
+  
+  display: flex;
+  justify-content:center;
+  width: 100%;
+}
+
+
+
+
+
+/* TELA DE CADASTRO */
+#banner-cadastro {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+#banner-texto {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8rem;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+}
+#banner-texto2 {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+}
+
+#banner-cadastro img {
+  margin-left: 10rem;
+}
+
+#texto-banner-cadastro {
+  font-size: 6vw;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-top: 5vw;
+}
+
+#pills-tab {
+  background-color: #cc2222;
+  padding-bottom: 2vh;
+}
+
+#pills-profile, #pills-home {
+  background-color: #dddddd;
+  padding: 0 10% 0 10%
+}
+
+#pills-home-tab, #pills-profile-tab {
+  color:aliceblue;
+}
+
+#form {
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+#botao {
+  display: flex;
+  justify-content: center;
+}
+
+.section1 .bloco4 .text-center {
+  padding-top: 25px;
+}
+
+/* botão 2 - Saiba Mais */
+.section1 .botao2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+/* Page Pontos de Entrega */
+/* Google Maps */
+
+#map {
+    height: 400px;
+    width: 100%;
+ 
+  }
+
+/* Lista de Locais de Entrega */
+.section1 .section2 .nav-link{
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+}
+
+.section1 .section2{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+/*Card de endereços */
+.section2 img{
+ margin-right: auto;
+}
+
+.section1 .section3{
+  background-color: #cc2222;
+  color:aliceblue;
+  display: flex;
+  justify-content: center;
+
+}
+
+.section1 .section3 a{
+  color: aliceblue;
+  
+}
+
+
+/* Estilização conteúdo página informativo */
+
+#mainContent{
+    background: linear-gradient(to bottom, white 10% , rgb(227, 233, 219)20%, rgb(236, 242, 228)90%, white 99%); 
+}p
+
+#nav-tab{
+    backdrop-filter: blur(2px);
+} 
+#nav-tab a:active{
+    background-color: #916f67;
+}
+
+#nav-tab a{
+    font-weight: 500;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#333333;
+    font-variant: small-caps;
+}
+#nav-tab a:hover{
+    color: #6d2717;
+}
+.card{
+    background-color: rgba(127, 255, 212, 0.207);
+    /* border: 2px solid black; */
+    border: none;
+    box-shadow: 0px 0px 15px 1px rgb(130, 151, 99);
+    ;
+}
+.card-text{
+    font-size: 0.8rem;
+    text-shadow: 0 0 3px #c4cace;
+    
+}
+
+.card :hover{
+    transition: .5s;
+    transform: scale(1.04);
+}
+
+/* Estilização botão Top */
+#topBtn {
+  position: fixed;
+  bottom: 180px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  box-shadow: 0px 3px 10px 1px rgb(59, 57, 55);
+  opacity: 80%;
+  cursor: pointer;
+  padding: 2px 5.5px 2px 5.5px;
+  border-radius: 10px;
+  background-color: #dcc3b5;
+  color: rgb(68, 30, 19);
+  transition: 500ms ease-in-out;
+}
+#topBtn:hover {
+  background: #6d2717;
+  color: #dcceb5;
+}
+/* FIM botão top  */
+
+/* PÁGINA CATÁLOGOS */
+.catalogo-Premios{
+    background-color: #dddddd;
+    /* height: 1000px; */
+    padding-bottom: 30px;
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: center */;
+    /* align-items: center; */
+}
+
+.titulo-premios{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 6rem;
+};
+
+.catalogo-Premios .bodyPremios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.containerPremios{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    transform-style: preserve-3d;
+    width: 100%;
+}
+
+.containerPremios .box{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    margin: 40px;
+    background: #232323;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+
+}
+
+.containerPremios .box .name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0, 0, 75px); 
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.containerPremios .box:hover .name{
+    top: 20px;
+    opacity: 1;
+}
+
+.containerPremios .box .circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: #fff;
+    transform-style: preserve-3d;
+    z-index: 10;
+    opacity: 1;
+    transform: translate3d(-50%, -50%, 40px);
+}
+
+.containerPremios .box .premio{
+    width: 300px;
+    position: absolute;
+    bottom: -10;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, 0, 75px);
+    color: black;
+    background: #333;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.containerPremios .box:hover .premio {
+    bottom: 10px;
+    opacity: 1;
+}
+
+
+.containerPremios .box .product{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 270px;
+    transition: 0.5s;
+    z-index: 11;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, -50%, 50px) rotate(-15deg);
+}
+
+.containerPremios .box:hover .product{
+    transform: translate3d(-50%, -50%, 100px) rotate(-15deg);
+}
+
+.containerPremios .box:nth-child(1) .circle,
+.containerPremios .box:nth-child(1) .premio {
+    background: #9bdc28;
+}
+
+.containerPremios .box:nth-child(2) .circle, 
+.containerPremios .box:nth-child(2) .premio {
+    background: #c4cace;
+}
+
+.containerPremios .box:nth-child(3) .circle, 
+.containerPremios .box:nth-child(3) .premio {
+    background: #cd7f32 ;
+}
+
+.ranking{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.tabela{
+    margin: 0 auto;
+    width: 35%;
+}
+
+
+.linhaProdutos{
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+/* FIM TELA CATÁLOGO */
+
+/* DASHBOARD */
+#valor{
+    font-size: 100px;  
+}
+
+.banner-dashboard{
+    text-align: center;
+}
+
+.main-dashboard{
+    background-color: #dddddd;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.cadastroColeta{
+    background-color: #cc2222;
+    border: 0px solid black;
+    border-radius: 25px;
+    padding: 25px;
+    /* color: white; */
+    color: black;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(233, 231, 231);
+  border-top: 4px groove #bbb3b1;
+  border-bottom: 4px groove #bbb3b1;
+}
+
+footer section {
+  height:100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.redes-sociais img {
+  float: right;
+  height: 50px;
+  margin: 10px;
+  filter: invert(1);
+}
+
+.footer1 img, .footer2 img {
+  float: right;
+  height: 50px;
+  margin: 10px;
+}
+
+.footer1 {
+  background-color: #cc2222;
+  color: black;
+  height: 150px;
+}
+.footer2{
+    background-color: #cc2222;
+    color:black;
+    height: 150px;
+}
+
+
